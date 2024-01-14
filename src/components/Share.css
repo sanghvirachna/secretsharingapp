@@ -20,10 +20,12 @@ header .heading{
     height:100%;
 }
 header .heading img{
-    height:80%;
-    width:auto
+    height:70%;
+    width:auto;
+    margin: 0px;
 }
 header img{
+    margin:auto 2rem;
     height:80%;
     width:auto;
 }
@@ -33,15 +35,21 @@ header img{
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 0.1rem 2rem;
+        margin: auto 0rem;
         height:100%;
+        text-align: center;
+    }
+    header .heading img{
+      /* margin: auto 0rem; */
+        height:50%;
+        width:auto;
     }
     header .heading img{
         height:50%;
         width:auto;
     }
     .user{
-        margin:0.1rem 0.4 rem;
+        /* display: none; */
         height:40%;
         width:auto;
         
