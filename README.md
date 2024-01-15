@@ -4,6 +4,10 @@
 
 This is a React-based application that allows users to share secrets anonymously, creating a friendly environment for all. The application uses Firebase for data storage and Auth0 for authentication.
 
+## 🌐 Live Demo
+
+You can access the live demo of the application at [https://secret-share-app-6785e.web.app/](https://secret-share-app-6785e.web.app/).
+
 ## 🛠️ Tech Stack
 
 - React.js: A JavaScript library for building user interfaces. Used libraries like Material UI to ease basic UI work.
