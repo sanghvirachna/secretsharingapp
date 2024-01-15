@@ -212,7 +212,9 @@ button:hover {
     
         margin: 1rem auto;
     
-    
+    }
+    button {
+        font-size: calc(0.3rem + 0.5vw); 
     }
     
 }
