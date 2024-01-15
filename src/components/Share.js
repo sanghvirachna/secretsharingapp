@@ -55,7 +55,7 @@ const Share = () => {
         {secrets.map((c,i) => <div key={i} className='secret'>
           <p >
             <div className='userprofile'>
-            <img src="https://cdn-icons-png.flaticon.com/256/3177/3177440.png" className='userimage'></img>
+            <img src="https://cdn-icons-png.flaticon.com/256/3177/3177440.png" alt="user" className='userimage'></img>
             <strong>{getRandomName()}  <span>{formatDistanceToNow(Timestamp)} ago</span> </strong>
            
 <br></br>
