@@ -15,7 +15,7 @@ const Share = () => {
   const [showLogout, setShowLogout] = useState(false);
   const db = getDatabase();
   const { logout } = useAuth0();
-  const randomTimestamp = Date.now() - Math.floor(Math.random() * 1000000000);
+  const Timestamp = Date.now();
   const getRandomName = () => {
     return names[Math.floor(Math.random() * names.length)];
   }
@@ -34,13 +34,13 @@ const Share = () => {
   }
   const handleLogout = () => {
     logout({ returnTo: window.location.origin });
-    // navigate('/')
+    
   }
   return (
-    <div>
+    <div className='main' style={{backgroundColor: 'black'}}>
       <header>
         <div className='heading'>
-          <p>Your are Anonymous</p>
+          <p>You are Anonymous</p>
           <img src="https://cdn-icons-png.flaticon.com/256/1768/1768663.png" alt="secure"></img>
         </div>
         <div> 
@@ -56,7 +56,7 @@ const Share = () => {
           <p >
             <div className='userprofile'>
             <img src="https://cdn-icons-png.flaticon.com/256/3177/3177440.png" className='userimage'></img>
-            <strong>{getRandomName()}  <span>{formatDistanceToNow(randomTimestamp)} ago</span> </strong>
+            <strong>{getRandomName()}  <span>{formatDistanceToNow(Timestamp)} ago</span> </strong>
            
 <br></br>
             </div>

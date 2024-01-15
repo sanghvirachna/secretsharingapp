@@ -16,6 +16,8 @@ const firebaseConfig = {
   messagingSenderId: "839491010809",
   appId: "1:839491010809:web:ee31ff60a68e2b8f38a228",
   measurementId: "G-RHKKW18W6C"
+
+  
 };
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

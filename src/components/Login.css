@@ -1,0 +1,218 @@
+
+.login{
+    background-color: #f9fcff;
+    background-image: linear-gradient(147deg, #f9fcff 0%, #dee4ea 74%);;
+}
+.app-title {
+    position: absolute;
+    z-index: 10;
+    /* Adjust these values to position the title */
+    top: 20%;
+    left: 22%;
+    transform: translate(-50%, -50%);
+    font-size: calc(1.5vw + 1.5vh + 1vmin);
+    color: #fff;
+    /* Or any color you want for the text */
+    animation: colorChange 4s infinite;
+}
+
+@keyframes colorChange {
+    0% {
+        color: #BA87FF;
+    }
+
+    /* purple */
+    25% {
+        color: #ABF0F9;
+    }
+
+    /* scifiblue */
+    50% {
+        color: #fff;
+    }
+
+    /* white */
+    75% {
+        color: #FFD700;
+    }
+
+    /* gold */
+    100% {
+        color: #BA87FF;
+    }
+
+    
+}
+
+.login {
+    width: 50vw;
+    position: absolute;
+    z-index: 1;
+    right: 0;
+    top:0px;
+    height: 100vh;
+    padding: 5rem 0rem 0rem 0rem;
+    text-align: center;
+}
+
+.heading {
+    font-size: calc(1rem + 1vw);
+    text-align: center;
+}
+
+.share {
+    padding-top: 0px;
+    font-size: calc(0.5rem + 0.5vw);
+}
+.get{
+    padding-top:2rem;
+    font-weight: bold;
+    font-size: calc(0.5rem + 1vw);
+    text-align: center;
+
+}
+
+
+.works {
+    padding-top: 1rem;
+    font-size: calc(1rem + 0.5vw);
+
+}
+
+.works p {
+    padding-top: 0rem;
+    font-size: calc(0.5rem + 0.5vw);
+}
+
+.login p {
+    padding-top: 0rem;
+    font-size: calc(0.5rem + 0.5vw);
+}
+
+.box {
+    width: 40%;
+    height: auto;
+
+    box-shadow: 0px 0px 10px 2px rgba(128, 128, 128, 0.5);
+    padding:1rem;
+
+    margin: 1rem auto;
+
+
+}
+.box p:nth-child(1) {
+    color: #7e46c7; /* purple */
+}
+
+.box p:nth-child(2) {
+    color: #3cb5c5; /* scifiblue */
+}
+
+
+.box p:nth-child(3) {
+    color: #FFD700; /* gold */
+}
+button {
+    border-width: 4px;
+    background-color: transparent;
+    transition: all 0.3s ease; 
+    color:#000000;
+    font-size: calc(0.5rem + 0.5vw);
+    border-style: solid;
+    padding: 1rem 2rem 1rem 2rem;
+    border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 1;
+}
+button:hover {
+    background-color: rgba(128, 128, 128, 0.09);
+    border-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet) 0.4;
+}
+@media (max-width: 768px) {
+    
+    .login{
+        width:100vw;
+        height: 100vh;
+        padding: 8rem 0rem 0rem 0rem;
+        text-align: center;
+        background:transparent;
+    }
+    .app-title{
+        top:10%;
+        left:50%;
+        /* font-size: calc(1.5vw + 2vh + 1vmin); */
+        font-size: 1.9rem;
+        animation: colorChange 2s infinite;
+        text-align:center;
+
+    }
+    @keyframes colorChange {
+        0% {
+            color: #500ea5;
+        }
+    
+        /* purple */
+        25% {
+            color: #052124;
+        }
+    
+        /* scifiblue */
+        50% {
+            color: #d64e4e;
+        }
+    
+        /* white */
+        75% {
+            color: #f5db46;
+        }
+    
+        /* gold */
+        100% {
+            color: #6114c5;
+        }
+    }    
+    .heading {
+        font-size: calc(1rem + 3vw);
+        text-align: center;
+    }
+    
+    .share {
+        padding-top: 0px;
+        font-size: calc(0.5rem + 2vw);
+    }
+    .get{
+        padding-top:2rem;
+        font-weight: bold;
+        font-size: calc(0.5rem + 3vw);
+        text-align: center;
+    
+    }
+    
+    
+    .works {
+        padding-top: 1rem;
+        font-size: calc(1rem + 1vw);
+    
+    }
+    
+    .works p {
+        padding-top: 0rem;
+        font-size: calc(0.5rem + 1vw);
+    }
+    
+    .login p {
+        padding-top: 0rem;
+        font-size: calc(0.5rem + 2vw);
+    }
+    
+    .box {
+        width: 60%;
+        height: auto;
+    
+        box-shadow: 0px 0px 10px 2px rgba(128, 128, 128, 0.5);
+        padding:1rem;
+    
+        margin: 1rem auto;
+    
+    
+    }
+    
+}
