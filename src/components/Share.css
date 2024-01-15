@@ -29,6 +29,23 @@ header img{
     height:80%;
     width:auto;
 }
+.btm{
+    position: fixed;
+    width:100%;
+    bottom:2px;
+    display: flex;
+    flex-direction: row;
+}
+.btm input{
+    width: 100%;
+    height: 100%;
+    font-size: calc(1rem + 1vw); 
+    padding: 0.5rem;
+    border: none;
+    outline: none;
+    background-color: #1f1f1f;
+    color:#e6e6e6;
+}
 
 @media (max-width: 768px) {
     header .heading{

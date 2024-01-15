@@ -4,7 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Auth0Provider } from '@auth0/auth0-react';
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
 
+const firebaseConfig = {
+  apiKey: "AIzaSyDy6iOp2_YTKW7C1UEMlTbILwz4yoyRlu4",
+  authDomain: "secret-share-app-6785e.firebaseapp.com",
+  databaseURL: "https://secret-share-app-6785e-default-rtdb.firebaseio.com",
+  projectId: "secret-share-app-6785e",
+  storageBucket: "secret-share-app-6785e.appspot.com",
+  messagingSenderId: "839491010809",
+  appId: "1:839491010809:web:ee31ff60a68e2b8f38a228",
+  measurementId: "G-RHKKW18W6C"
+};
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
 
@@ -20,7 +32,6 @@ root.render(
 
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 reportWebVitals();
