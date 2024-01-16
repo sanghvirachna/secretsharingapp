@@ -22,9 +22,9 @@ const Share = () => {
   const secretListRef = ref(db,'secrets')
   useEffect(() => {
     onChildAdded(secretListRef,(data) =>{
-      setSecret(secrets => [...secrets,data.val().msg]);
+      setSecret(secrets => [...secrets, {msg: data.val().msg, name: getRandomName()}]);
     })
-  },[])
+},[])
   const sendSecret = (msg)=>{
     const secretRef = push(secretListRef);
     set(secretRef,{
@@ -52,19 +52,17 @@ const Share = () => {
       
       <div className='room'>
         
-        {secrets.map((c,i) => <div key={i} className='secret'>
-          <p >
-            <div className='userprofile'>
-            <img src="https://cdn-icons-png.flaticon.com/256/3177/3177440.png" alt="user" className='userimage'></img>
-            <strong>{getRandomName()}  <span>{formatDistanceToNow(Timestamp)} ago</span> </strong>
-           
-<br></br>
-            </div>
-            <span className='text'>{c}</span>
-          </p>
-
-        </div>)}
-       
+      {secrets.map((c,i) => <div key={i} className='secret'>
+    <p>
+        <div className='userprofile'>
+        <img src="https://cdn-icons-png.flaticon.com/256/3177/3177440.png" alt="user" className='userimage'></img>
+        <strong>{c.name}  <span>{formatDistanceToNow(Timestamp)} ago</span> </strong>
+        <br></br>
+        </div>
+        <span className='text'>{c.msg}</span>
+    </p>
+</div>)}
+        <div className='spacer'></div>
         <div className='btm'>
         {/* <TextField id="outlined-basic"  variant="outlined" placeholder='Type your secret'value={message} onInput={e => setMessage(e.target.value)}/> */}
         <input type="text" placeholder='Type your secret'value={message} onInput={e => setMessage(e.target.value)} ></input>

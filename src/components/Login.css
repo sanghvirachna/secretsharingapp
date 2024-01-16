@@ -142,6 +142,7 @@ button:hover {
         font-size: 1.9rem;
         animation: colorChange 2s infinite;
         text-align:center;
+        padding-bottom: 3rem;
 
     }
     @keyframes colorChange {
