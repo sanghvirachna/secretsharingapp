@@ -23,10 +23,3 @@ This is a React-based application that allows users to share secrets anonymously
 - Authentication: Users are authenticated using Auth0.
 - Data storage: All secrets are stored securely in Firebase.
 
-## 🤝 Contributing
-
-Contributions are welcome! Please read the [contributing guidelines](link-to-your-contributing-guidelines) before getting started.
-
-## 📜 License
-
-This project is licensed under the terms of the [MIT license](link-to-your-license).
