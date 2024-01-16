@@ -1,9 +1,10 @@
 
 .login{
-    background-color: #f9fcff;
-    background-image: linear-gradient(147deg, #f9fcff 0%, #dee4ea 74%);;
+    /* background-color: #f9fcff; */
+    background-image: linear-gradient(200deg, #f9fcff 0%, #dee4ea 74%);;
 }
 .app-title {
+    
     position: absolute;
     z-index: 10;
     /* Adjust these values to position the title */
@@ -61,6 +62,7 @@
 }
 
 .share {
+    font-family: 'Gorditas', serif;
     padding-top: 0px;
     font-size: calc(0.5rem + 0.5vw);
 }
@@ -80,11 +82,13 @@
 }
 
 .works p {
+    
     padding-top: 0rem;
     font-size: calc(0.5rem + 0.5vw);
 }
 
 .login p {
+    font-family: 'Gorditas', serif;
     padding-top: 0rem;
     font-size: calc(0.5rem + 0.5vw);
 }
@@ -136,7 +140,7 @@ button:hover {
         background:transparent;
     }
     .app-title{
-        top:10%;
+        top:15%;
         left:50%;
         /* font-size: calc(1.5vw + 2vh + 1vmin); */
         font-size: 1.9rem;
@@ -173,6 +177,7 @@ button:hover {
     .heading {
         font-size: calc(1rem + 3vw);
         text-align: center;
+        padding-top:2rem;
     }
     
     .share {
@@ -215,7 +220,7 @@ button:hover {
     
     }
     button {
-        font-size: calc(0.3rem + 0.5vw); 
+        font-size: calc(0.3rem + 2vw); 
     }
     
 }

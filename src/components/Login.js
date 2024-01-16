@@ -18,7 +18,7 @@ const Login = () => {
                 <p>🛡️ Security & Privacy</p>
                 <p>🤝 Connect Anonymously</p>
                 <p>No Judgments, Just Understanding🤝✨</p>
-                <p>Get Started by clicking on button below</p>
+                <h4>Get Started by clicking on button below</h4>
                 <button onClick={() => loginWithRedirect()}>Log in</button>
                 <div className='box'>
                 <div className='works'>🌐 How It Works

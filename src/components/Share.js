@@ -63,11 +63,11 @@ const Share = () => {
         <div className='spacer'></div>
         <div className='btm'>
         <input type="text" placeholder='Type your secret'value={message} onInput={e => setMessage(e.target.value)} ></input>
-          <button  onClick={e => {
+          <a className='button' onClick={e => {
           sendSecret(message);
           setMessage('');
         } }>
-      </button>
+      </a>
         </div>
       </div>
      </div>
