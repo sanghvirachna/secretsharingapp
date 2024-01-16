@@ -1,10 +1,8 @@
 import React ,{useEffect, useState} from 'react'
 import './Share.css';
 import { getDatabase,ref,push,set,onChildAdded } from "firebase/database";
-import Button from '@material-ui/core/Button';
 import { useAuth0 } from "@auth0/auth0-react";
 import { formatDistanceToNow } from 'date-fns' // Import the function
-import SendIcon from '@material-ui/icons/Send';
 
 
 const Share = () => {
@@ -64,13 +62,12 @@ const Share = () => {
 </div>)}
         <div className='spacer'></div>
         <div className='btm'>
-        {/* <TextField id="outlined-basic"  variant="outlined" placeholder='Type your secret'value={message} onInput={e => setMessage(e.target.value)}/> */}
         <input type="text" placeholder='Type your secret'value={message} onInput={e => setMessage(e.target.value)} ></input>
-          <Button variant="contained" endIcon={<SendIcon />} onClick={e => {
+          <button  onClick={e => {
           sendSecret(message);
           setMessage('');
         } }>
-      </Button>
+      </button>
         </div>
       </div>
      </div>
