@@ -6,8 +6,7 @@ This is a React-based application that allows users to share secrets anonymously
 
 ## 🌐 Live Demo
 
-You can access the live demo of the application at [https://secret-share-app-6785e.web.app/](https://secret-share-app-6785e.web.app/).
-
+You can access the live demo of the application at [https://secretsharingapp-5sh5.vercel.app/](https://secretsharingapp-5sh5.vercel.app/)
 ## 🛠️ Tech Stack
 
 - React.js: A JavaScript library for building user interfaces. Used libraries like Material UI to ease basic UI work.
